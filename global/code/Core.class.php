@@ -481,7 +481,7 @@ class Core
 		self::$unicode = (isset($g_unicode)) ? $g_unicode : null;
 		self::$setSqlMode = (isset($g_set_sql_mode)) ? $g_set_sql_mode : null;
 		self::$sqlStrictMode = (isset($g_sql_strict_mode)) ? $g_sql_strict_mode : "off";
-		self::$hideUpgradeLink = (isset($g_hide_upgrade_link)) ? $g_hide_upgrade_link : false;
+		self::$hideUpgradeLink = (isset($g_hide_upgrade_link)) ? $g_hide_upgrade_link : true;
 
 		if (isset($g_custom_cache_folder)) {
 			self::$cacheFolder = $g_custom_cache_folder;
